@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$project_dir"
+if [ ! -x agent/instagram_poc/.venv/bin/python ]; then
+    echo 'Install first: UV_CACHE_DIR=/tmp/instagram-poc-uv uv sync --project agent/instagram_poc --frozen' >&2
+    exit 1
+fi
+exec agent/instagram_poc/.venv/bin/python -m agent.instagram_poc "$@"

@@ -1,0 +1,182 @@
+# Local development only. This file intentionally contains disposable credentials.
+# Owner-managed TLS/proxy, production secrets, backup and image digests are pending.
+name: instagram-dev
+x-app: &app
+  build:
+    context: .
+    dockerfile: deploy/Dockerfile
+  environment: &environment
+    APP_LOCAL: "1"
+    PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://localhost:8000}
+    PUBLIC_INDEXING_ENABLED: "0"
+    CONTACT_MAIL_SETTINGS_FILE: /var/lib/contact-mail/smtp.json
+    POLICY_EXPORT_FILE: /var/lib/site-policy/privacy.html
+    POSTGRES_HOST: db
+    POSTGRES_DB: instagram
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: development-only
+  volumes:
+    - .:/app
+    - private-media:/app/private-media
+    - contact-mail:/var/lib/contact-mail
+    - site-policy:/var/lib/site-policy
+  depends_on:
+    db:
+      condition: service_healthy
+services:
+  db:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: instagram
+      POSTGRES_PASSWORD: development-only
+    volumes:
+      - database:/var/lib/postgresql
+      - ./deploy/roles.sql:/docker-entrypoint-initdb.d/010-roles.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d instagram"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+  migration:
+    <<: *app
+    profiles: ["tools"]
+    environment:
+      <<: *environment
+      APP_RUNTIME: migration
+    command: ["python", "manage.py", "migrate", "--noinput"]
+  media-audit:
+    <<: *app
+    profiles: ["tools"]
+    read_only: true
+    environment:
+      <<: *environment
+      APP_RUNTIME: migration
+    command: ["python", "manage.py", "audit_media", "--verify", "--check"]
+    volumes:
+      - .:/app:ro
+      - private-media:/app/private-media:ro
+      - contact-mail:/var/lib/contact-mail:ro
+      - site-policy:/var/lib/site-policy:ro
+  web:
+    <<: *app
+    restart: unless-stopped
+    environment:
+      <<: *environment
+      APP_RUNTIME: public
+      POSTGRES_USER: public_dev
+      POSTGRES_PASSWORD: public-development-only
+    ports: ["127.0.0.1:8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000", "--insecure"]
+    volumes:
+      - .:/app:ro
+      - private-media:/app/private-media:ro
+      - contact-mail:/var/lib/contact-mail:ro
+      - site-policy:/var/lib/site-policy:ro
+  tailnet:
+    <<: *app
+    profiles: ["tailnet"]
+    restart: unless-stopped
+    environment:
+      <<: *environment
+      APP_RUNTIME: public
+      APP_SCRIPT_PREFIX: ""
+      PUBLIC_ORIGIN: https://dell-linux-mint.bandicoot-pumpkinseed.ts.net
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,[::1],dell-linux-mint.bandicoot-pumpkinseed.ts.net
+      LANGUAGE_COOKIE_SECURE: "1"
+      LANGUAGE_COOKIE_NAME: instagram_site_language
+      POSTGRES_USER: public_dev
+      POSTGRES_PASSWORD: public-development-only
+    ports: ["127.0.0.1:8002:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000", "--insecure"]
+    volumes:
+      - .:/app:ro
+      - private-media:/app/private-media:ro
+      - contact-mail:/var/lib/contact-mail:ro
+      - site-policy:/var/lib/site-policy:ro
+  privacy:
+    environment:
+      POLICY_EXPORT_FILE: /policy-export/privacy.html
+    volumes:
+      - site-policy:/policy-export:ro
+    profiles: ["privacy"]
+    build:
+      context: .
+      dockerfile: deploy/privacy/Dockerfile
+    restart: unless-stopped
+    read_only: true
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 64
+    mem_limit: 128m
+    ports: ["127.0.0.1:8003:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/privacy/', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+  instagram-agent:
+    profiles: ["administration"]
+    build:
+      context: .
+      dockerfile: deploy/instagram-agent.Dockerfile
+    restart: unless-stopped
+    networks: [instagram-control]
+    volumes:
+      - instagram-data:/var/lib/instagram/data
+      - instagram-key:/var/lib/instagram/key
+      - instagram-control:/run/instagram-control
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('127.0.0.1', 8769), timeout=2).close()"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+  admin:
+    <<: *app
+    profiles: ["administration"]
+    restart: unless-stopped
+    networks: [default, instagram-control]
+    depends_on:
+      db:
+        condition: service_healthy
+      instagram-agent:
+        condition: service_healthy
+    environment:
+      <<: *environment
+      APP_RUNTIME: admin
+      INSTAGRAM_AGENT_URL: http://instagram-agent:8769
+      INSTAGRAM_CONTROL_KEY_FILE: /run/instagram-control/control.key
+      POSTGRES_USER: admin_dev
+      POSTGRES_PASSWORD: admin-development-only
+    ports: ["127.0.0.1:8001:8000"]
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000", "--insecure"]
+    volumes:
+      - .:/app:ro
+      - private-media:/app/private-media
+      - contact-mail:/var/lib/contact-mail
+      - site-policy:/var/lib/site-policy
+      - instagram-control:/run/instagram-control:ro
+networks:
+  instagram-control:
+volumes:
+  instagram-data:
+  instagram-key:
+  instagram-control:
+  database:
+  private-media:
+  contact-mail:
+  site-policy:

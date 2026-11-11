@@ -1,0 +1,9 @@
+[project]
+name = "mysite-instagram-storage"
+version = "0.1.0"
+description = "Shared private operator credential storage"
+requires-python = ">=3.11"
+dependencies = ["cryptography>=46,<47"]
+
+[tool.uv]
+package = false

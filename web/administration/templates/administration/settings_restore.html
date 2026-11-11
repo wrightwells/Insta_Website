@@ -1,0 +1,30 @@
+{% extends 'administration/base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Restore settings" %}{% endblock %}
+{% block content %}
+<div class="admin-heading">
+  <p class="eyebrow">{% translate "SETTINGS RECOVERY" %}</p>
+  <h1>{% translate "Review before restoring." %}</h1>
+  <p>{% translate "Current version" %} {{ current.version }} · {% translate "Saved version" %} {{ revision.version }}</p>
+  <p>{% translate "Only the settings below will change. Your current settings will be preserved as a new history entry." %}</p>
+</div>
+{% if error %}<p class="notice error" role="alert">{{ error }}</p>{% endif %}
+{% if not rows and form.errors %}<div role="alert">{{ form.errors }}</div>{% endif %}
+{% if rows %}
+<div class="table-wrap">
+  <table class="settings-comparison">
+    <caption>{% translate "Settings comparison" %}</caption>
+    <thead><tr><th scope="col">{% translate "Setting" %}</th><th scope="col">{% translate "Current value" %}</th><th scope="col">{% translate "Value to restore" %}</th></tr></thead>
+    <tbody>{% for row in rows %}<tr>
+      <th scope="row">{{ row.label }}</th>
+      <td>{% if row.background and current.background_image_id %}<img class="asset-preview" src="{% url 'owner_theme_image' asset_id=current.background_image_id %}" alt="{% translate 'Current decorative site background' %}">{% endif %}<pre class="original">{{ row.before }}</pre></td>
+      <td>{% if row.background and target.background_image_id %}<img class="asset-preview" src="{% url 'owner_theme_image' asset_id=target.background_image_id %}" alt="{% translate 'Previous decorative site background' %}">{% endif %}<pre class="original">{{ row.after }}</pre></td>
+    </tr>{% endfor %}</tbody>
+  </table>
+</div>
+{% if not error %}
+<form method="post" class="restoration-form">{% csrf_token %}{{ form.as_p }}<div class="actions"><button class="button primary" type="submit">{% translate "Confirm restoration" %}</button></div></form>
+{% endif %}
+{% elif not error %}<p class="notice">{% translate "These settings already match the saved version. Nothing needs restoring." %}</p>{% endif %}
+<p><a href="{% url 'owner_settings_restore' revision_id=revision.pk %}">{% translate "Reload comparison" %}</a> · <a href="{% url 'owner_revision' revision_id=revision.pk %}">{% translate "Back to saved version" %}</a></p>
+{% endblock %}

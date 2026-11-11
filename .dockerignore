@@ -1,0 +1,13 @@
+.git
+.venv
+.env*
+*.sqlite3
+private-media
+staticfiles
+__pycache__
+docs
+tests
+
+agent/.venv
+agent/instagram_poc/.venv
+agent/**/__pycache__

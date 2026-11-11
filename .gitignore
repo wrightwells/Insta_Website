@@ -13,3 +13,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Python / local runtime data
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+private-media/
+staticfiles/
+.coverage
+.pytest_cache/

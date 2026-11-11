@@ -1,0 +1,18 @@
+{% extends 'public/base.html' %}
+{% load i18n %}
+{% block content %}<section class="intro"><p class="eyebrow">{{ copy.contact }}</p><h1>{{ copy.contact_title }}</h1>{% if contact_intro %}<div class="lede">{{ contact_intro|linebreaks }}</div>{% endif %}</section>
+<div class="contact-layout{% if not mail_available %} contact-details-only{% endif %}"><section class="contact-details" aria-label="{{ copy.contact }}">
+{% if site.contact_email %}<p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>{% endif %}
+{% if site.contact_phone %}<p><a href="tel:{{ contact_phone_link }}">{{ site.contact_phone }}</a></p>{% endif %}
+{% if site.contact_address %}<address>{{ site.contact_address|linebreaks }}</address>{% endif %}
+{% if contact_hours %}<div>{{ contact_hours|linebreaks }}</div>{% endif %}
+{% if not site.contact_email and not site.contact_phone and not site.contact_address and not contact_intro and not contact_hours %}<p>{{ copy.contact_empty }}</p>{% endif %}
+</section>{% if mail_available %}<section class="contact-form-section"><h2>{{ copy.contact_form_title }}</h2>
+{% if owner_preview %}<p>{{ copy.contact_preview }}</p>{% else %}
+{% if enquiry_sent %}<p class="notice" role="status">{{ copy.contact_sent }}</p>{% endif %}
+<form method="post" class="contact-form">{% csrf_token %}{{ enquiry_form.non_field_errors }}
+{{ enquiry_form.submission_token }}{{ enquiry_form.submission_token.errors }}
+{% for field in enquiry_form.visible_fields %}<div class="{% if field.name == 'website' %}contact-trap{% else %}form-field{% endif %}">{{ field.errors }}{{ field.label_tag }}{{ field }}</div>{% endfor %}
+<p class="muted">{{ copy.contact_privacy }} <a href="{% url 'privacy' %}">{{ copy.privacy }}</a></p>
+<button class="button" type="submit">{{ copy.contact_send }}</button>
+</form>{% endif %}</section>{% endif %}</div>{% endblock %}

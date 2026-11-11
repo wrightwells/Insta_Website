@@ -1,0 +1,3 @@
+<header><p>{{ policy.site_name }}</p><h1>{{ policy_title }}</h1><p>Last updated: {{ policy.updated_on|date:"j F Y" }}.</p></header>
+{% for section in policy_sections %}{% if section.heading %}<h2>{{ section.text }}</h2>{% else %}<p>{{ section.text|linebreaksbr }}</p>{% endif %}{% endfor %}
+<footer>{% if policy_contact_email %}<p>Privacy contact: <a href="mailto:{{ policy_contact_email }}">{{ policy_contact_email }}</a></p>{% endif %}{% if policy.operator_name %}<p>{{ policy.operator_name }}</p>{% endif %}{% if policy.contact_address %}<address>{{ policy.contact_address|linebreaksbr }}</address>{% endif %}</footer>

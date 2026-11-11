@@ -1,0 +1,6 @@
+{% extends 'administration/base.html' %}
+{% load i18n %}
+{% block title %}{% translate "Delete story" %}{% endblock %}
+{% block content %}<div class="admin-heading"><h1>{% translate "Delete this story?" %}</h1><p>{% translate "This removes the post from the site and your Stories list. It does not delete the original Instagram post. History is retained, and future imports will not republish it." %}</p></div>
+<div class="preview">{{ record.display_caption|default:record.original_caption|linebreaks }}<p>{{ record.source_post_id }}</p></div>
+<form method="post">{% csrf_token %}{{ form.as_p }}<div class="actions"><button class="button primary" type="submit">{% translate "Delete story" %}</button><a href="{% url 'owner_items' %}">{% translate "Cancel" %}</a></div></form>{% endblock %}

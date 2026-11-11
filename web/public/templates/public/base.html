@@ -1,0 +1,48 @@
+{% load static %}<!doctype html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ seo.title }}</title>
+  <meta name="description" content="{{ seo.description }}">
+  <meta name="robots" content="{{ seo.robots }}">
+  {% if seo.canonical %}<link rel="canonical" href="{{ seo.canonical }}">{% endif %}
+  {% for code, url in seo.alternatives %}<link rel="alternate" hreflang="{{ code }}" href="{{ url }}">{% endfor %}
+  {% if seo.default_url %}<link rel="alternate" hreflang="x-default" href="{{ seo.default_url }}">{% endif %}
+  <meta property="og:type" content="{{ seo.og_type }}">
+  <meta property="og:title" content="{{ seo.og_title }}">
+  <meta property="og:description" content="{{ seo.og_description }}">
+  <meta property="og:site_name" content="{{ seo.site_name }}">
+  <meta property="og:locale" content="{{ seo.locale }}">
+  {% for locale in seo.alternate_locales %}<meta property="og:locale:alternate" content="{{ locale }}">{% endfor %}
+  {% if seo.og_url %}<meta property="og:url" content="{{ seo.og_url }}">{% endif %}
+  <meta name="twitter:card" content="{{ seo.twitter_card }}">
+  <meta name="twitter:title" content="{{ seo.twitter_title }}">
+  <meta name="twitter:description" content="{{ seo.twitter_description }}">
+  {% if seo.image %}<meta property="og:image" content="{{ seo.image }}"><meta property="og:image:alt" content="{{ seo.image_alt }}"><meta property="og:image:width" content="{{ seo.image_width }}"><meta property="og:image:height" content="{{ seo.image_height }}">{% endif %}
+  {% if seo.twitter_image %}<meta name="twitter:image" content="{{ seo.twitter_image }}"><meta name="twitter:image:alt" content="{{ seo.image_alt }}">{% endif %}
+  {% if seo.favicon %}<link rel="icon" href="{{ seo.favicon }}" sizes="any">{% endif %}
+  {% if seo.apple_icon %}<link rel="apple-touch-icon" href="{{ seo.apple_icon }}">{% endif %}
+  {% if seo.theme_color %}<meta name="theme-color" content="{{ seo.theme_color }}">{% endif %}
+  {% if seo.google_verification %}<meta name="google-site-verification" content="{{ seo.google_verification }}">{% endif %}
+  {% if seo.bing_verification %}<meta name="msvalidate.01" content="{{ seo.bing_verification }}">{% endif %}
+  {% if seo.business_json %}<script type="application/ld+json" nonce="{{ seo.nonce }}">{{ seo.business_json|safe }}</script>{% endif %}
+  <link rel="stylesheet" href="{% static 'public/site.css' %}">
+  <link rel="stylesheet" href="{% if theme_preview_token %}{% url 'owner_theme_preview' %}?full=1&amp;token={{ theme_preview_token|urlencode }}{% else %}{% url 'theme_css' %}{% endif %}">
+</head>
+<body>
+  {% if owner_preview %}<div class="shell preview-banner">{{ copy.theme_preview_notice }} <a href="{% url 'owner_theme' %}">{{ copy.theme_preview_back }}</a></div>{% endif %}
+  <a class="skip" href="#content">{{ copy.skip }}</a>
+  <header class="shell masthead">
+    <a class="wordmark" href="{% url 'feed' locale=locale %}{{ preview_query }}">{{ site.name }}<span aria-hidden="true"> ↗</span></a>
+    <nav aria-label="{{ copy.navigation }}">
+      <a href="{% url 'feed' locale=locale %}{{ preview_query }}" {% if page == 'feed' %}aria-current="page"{% endif %}>{{ copy.feed }}</a>
+      <a href="{% url 'contact' locale=locale %}{{ preview_query }}" {% if page == 'contact' %}aria-current="page"{% endif %}>{{ copy.contact }}</a>
+      {% if site.reviews_enabled %}<a href="{% url 'reviews' locale=locale %}{{ preview_query }}" {% if page == 'reviews' %}aria-current="page"{% endif %}>{{ copy.reviews }}</a>{% endif %}
+    </nav>
+    <nav class="locales" aria-label="{{ copy.language }}">{% for code, url in locale_links %}<a lang="{{ code }}" hreflang="{{ code }}" href="{{ url }}" {% if code == locale %}aria-current="true"{% endif %}>{{ code|upper }}</a>{% endfor %}</nav>
+  </header>
+  <main id="content" class="shell" tabindex="-1">{% block content %}{% endblock %}</main>
+  <footer class="shell footer"><span>{{ site.name }}</span><p>{{ footer }}</p><a href="{% url 'privacy' %}">{{ copy.privacy }}</a></footer>
+</body>
+</html>

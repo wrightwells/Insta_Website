@@ -1,0 +1,11 @@
+{% extends 'administration/base.html' %}{% load i18n %}
+{% block title %}{% translate "Site policy" %}{% endblock %}
+{% block content %}
+<div class="admin-heading"><h1>{% translate "Site policy" %}</h1><p>{% translate "Edit the public policy details and full text. Save publishes changes to the website and the policy-only page." %}</p></div>
+<p><a href="{% url 'owner_audit' %}?entity=site_policy">{% translate "View settings history" %}</a> · <a href="{% url 'privacy' %}" target="_blank" rel="noopener">{% translate "Open saved policy" %}</a></p>
+{% if saved %}<p class="notice" role="status">{% translate "Policy saved and published. The previous version is retained in history." %}</p>{% endif %}
+{% if request.GET.restored %}<p class="notice" role="status">{% translate "Settings restored. The previous values and restoration source were recorded in history." %}</p>{% endif %}
+<p>{% translate "Policy contact email uses the Contact page email:" %} <strong>{{ policy_contact_email|default:"—" }}</strong> · <a href="{% url 'owner_contact' %}">{% translate "Edit in Contact settings" %}</a></p>
+<form method="post" class="policy-editor">{% csrf_token %}{{ form.as_p }}<div class="actions"><button class="button" name="preview" type="submit">{% translate "Preview policy" %}</button><button class="button primary" type="submit">{% translate "Save policy" %}</button></div></form>
+<section class="preview policy-preview"><h2>{% translate "Full policy preview" %}</h2>{% if preview %}<p>{% translate "Preview only. Changes have not been saved." %}</p>{% endif %}{% include 'public/_policy_content.html' %}</section>
+{% endblock %}

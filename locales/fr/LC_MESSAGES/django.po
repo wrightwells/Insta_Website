@@ -1,0 +1,2006 @@
+# French translations for the owner portal.
+# Project translations, maintained with the application.
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: instagram-website 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-11 19:36+0000\n"
+"PO-Revision-Date: 2026-10-20 00:00+0000\n"
+"Last-Translator: Project maintainers\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: domain/content/discovery.py:28
+msgid "Use an absolute HTTPS URL without credentials or a root-relative asset path where allowed."
+msgstr "Utilisez une URL HTTPS absolue sans identifiants, ou un chemin commençant par / lorsque cela est permis."
+
+#: domain/content/discovery.py:56
+msgid "Invalid URL."
+msgstr "URL non valide."
+
+#: domain/content/discovery.py:67
+msgid "Enter a value in the format shown in the example."
+msgstr "Saisissez une valeur au format indiqué dans l’exemple."
+
+#: domain/content/discovery.py:69
+msgid "Provide the image width and height in pixels."
+msgstr "Indiquez la largeur et la hauteur de l’image en pixels."
+
+#: domain/content/discovery.py:73
+msgid "Enter your actual business details before enabling structured data."
+msgstr "Saisissez les informations réelles de votre entreprise avant d’activer les données structurées."
+
+#: domain/content/editing.py:54
+msgid "Unsupported editorial fields."
+msgstr "Champs de modification non pris en charge."
+
+#: domain/content/editing.py:57 domain/content/uploads.py:26
+msgid "This story has been deleted."
+msgstr "Cette publication a été supprimée."
+
+#: domain/content/editing.py:65
+msgid "Confirm removal of this published story before saving."
+msgstr "Confirmez le retrait de cette publication avant d’enregistrer."
+
+#: domain/content/editing.py:72
+msgid "Confirm removing this story from public view before scheduling it for the future."
+msgstr "Confirmez le retrait de cette publication du site avant de la programmer pour une date future."
+
+#: domain/content/editing.py:75
+msgid "Publishing requires a validated image and alternative text."
+msgstr "La publication nécessite une image validée et une description."
+
+#: domain/content/instagram_import.py:24
+msgid "Instagram returned an invalid post identity."
+msgstr "Instagram a renvoyé un identifiant de publication invalide."
+
+#: domain/content/instagram_import.py:28
+msgid "This post has no usable image or publication date."
+msgstr "Cette publication ne contient aucune image ou date utilisable."
+
+#: domain/content/instagram_import.py:34
+msgid "Instagram returned invalid caption text."
+msgstr "Instagram a renvoyé une légende invalide."
+
+#: domain/content/instagram_import.py:107
+msgid "Choose between 1 and 12 recent posts."
+msgstr "Choisissez entre 1 et 12 publications récentes."
+
+#: domain/content/instagram_import.py:114
+msgid "An Instagram import is already running. Please wait."
+msgstr "Une importation Instagram est déjà en cours. Veuillez patienter."
+
+#: domain/content/instagram_import.py:123
+msgid "Instagram returned an invalid post list."
+msgstr "Instagram a renvoyé une liste de publications invalide."
+
+#: domain/content/instagram_import.py:128
+msgid "This post has no usable image."
+msgstr "Cette publication ne contient aucune image utilisable."
+
+#: domain/content/instagram_import.py:133
+msgid "Instagram import time limit reached. Load fewer posts."
+msgstr "La durée maximale d’importation est atteinte. Chargez moins de publications."
+
+#: domain/content/instagram_import.py:138
+msgid "The images in this post exceed the import size limit."
+msgstr "Les images de cette publication dépassent la limite de taille autorisée."
+
+#: domain/content/instagram_import.py:142
+msgid "This post has unavailable images."
+msgstr "Certaines images de cette publication sont indisponibles."
+
+#: domain/content/media.py:32
+msgid "Image exceeds 10 MiB."
+msgstr "L’image dépasse 10 Mio."
+
+#: domain/content/media.py:38
+msgid "Use a single PNG, JPEG or WebP image within the dimension limit."
+msgstr "Utilisez une seule image PNG, JPEG ou WebP respectant la limite de dimensions."
+
+#: domain/content/media.py:47
+msgid "Invalid image."
+msgstr "Image non valide."
+
+#: domain/content/media.py:50
+msgid "Decoded image exceeds storage limit."
+msgstr "L’image décodée dépasse la limite de stockage."
+
+#: domain/content/media.py:79
+msgid "Media storage limit reached. Existing images were retained. Contact your operator."
+msgstr "La limite de stockage des images est atteinte. Les images existantes ont été conservées. Contactez votre responsable technique."
+
+#: domain/content/media.py:101
+msgid "An image description is required."
+msgstr "Une description de l’image est obligatoire."
+
+#: domain/content/models.py:13
+msgid "Draft"
+msgstr "Brouillon"
+
+#: domain/content/models.py:14
+msgid "Published"
+msgstr "Publié"
+
+#: domain/content/models.py:15
+msgid "Hidden"
+msgstr "Masqué"
+
+#: domain/content/models.py:16
+msgid "Error"
+msgstr "Erreur"
+
+#: domain/content/models.py:17
+msgid "Archived"
+msgstr "Archivé"
+
+#: domain/content/models.py:93
+#: web/administration/templates/administration/site_edit.html:4
+msgid "English"
+msgstr "Anglais"
+
+#: domain/content/models.py:93
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Français"
+msgstr "Français"
+
+#: domain/content/models.py:123
+msgid "Deployment default"
+msgstr "Paramètre du déploiement"
+
+#: domain/content/models.py:123
+msgid "Index and follow"
+msgstr "Indexer et suivre les liens"
+
+#: domain/content/models.py:123
+msgid "Do not index; follow links"
+msgstr "Ne pas indexer ; suivre les liens"
+
+#: domain/content/models.py:124
+msgid "Default"
+msgstr "Par défaut"
+
+#: domain/content/models.py:124
+msgid "Large"
+msgstr "Grand"
+
+#: domain/content/models.py:124
+msgid "Standard"
+msgstr "Standard"
+
+#: domain/content/models.py:124
+msgid "None"
+msgstr "Aucun"
+
+#: domain/content/models.py:132
+msgid "Automatic"
+msgstr "Automatique"
+
+#: domain/content/models.py:170
+msgid "The default language must be enabled."
+msgstr "La langue par défaut doit être activée."
+
+#: domain/content/models.py:315
+msgid "Editorial"
+msgstr "Éditorial"
+
+#: domain/content/models.py:315
+msgid "System sans-serif"
+msgstr "Sans empattements du système"
+
+#: domain/content/models.py:315
+msgid "Serif"
+msgstr "Avec empattements"
+
+#: domain/content/restoration.py:29
+msgid "Only site settings and appearance can be restored here."
+msgstr "Seuls les paramètres du site et son apparence peuvent être restaurés ici."
+
+#: domain/content/restoration.py:36
+msgid "The saved background image is missing or invalid. No settings were changed."
+msgstr "L’image d’arrière-plan enregistrée est manquante ou non valide. Aucun paramètre n’a été modifié."
+
+#: domain/content/restoration.py:64
+msgid "This saved version is incompatible with the current settings. No changes were made."
+msgstr "Cette version enregistrée est incompatible avec les paramètres actuels. Aucune modification n’a été effectuée."
+
+#: domain/content/restoration.py:80
+msgid "Confirm the restoration before applying these settings."
+msgstr "Confirmez la restauration avant d’appliquer ces paramètres."
+
+#: domain/content/theme.py:28
+msgid "Use six-digit hexadecimal colours, such as #253b33."
+msgstr "Utilisez des couleurs hexadécimales à six chiffres, par exemple #253b33."
+
+#: domain/content/theme.py:30
+msgid "Choose an approved font."
+msgstr "Choisissez une police autorisée."
+
+#: domain/content/theme.py:33
+msgid "Text, secondary text and accent colours need at least 4.5:1 contrast against the page and white cards."
+msgstr "Les couleurs du texte, du texte secondaire et d’accent doivent avoir un contraste d’au moins 4,5:1 avec la page et les cartes blanches."
+
+#: domain/content/uploads.py:17
+msgid "An English image description is required; French may fall back to it."
+msgstr "Une description en anglais est obligatoire ; elle est utilisée si la description française est vide."
+
+#: domain/content/uploads.py:31
+msgid "Choose an image for this story."
+msgstr "Choisissez une image pour cette publication."
+
+#: domain/content/uploads.py:62
+msgid "Supply only the supported theme fields."
+msgstr "Renseignez uniquement les champs du thème pris en charge."
+
+#: domain/content/uploads.py:64 web/administration/forms.py:115
+msgid "Choose an upload or remove the background, not both."
+msgstr "Choisissez une image à importer ou retirez l’arrière-plan, sans combiner les deux."
+
+#: domain/content/validators.py:19
+msgid "Use a canonical HTTPS Instagram post URL without query parameters."
+msgstr "Utilisez l’adresse HTTPS canonique d’une publication Instagram, sans paramètres de requête."
+
+#: web/administration/discovery_guidance.py:22
+msgid "Enable after entering your real business details"
+msgstr "Activez après avoir saisi les coordonnées réelles de votre entreprise"
+
+#: web/administration/discovery_guidance.py:30
+msgid "Required. There is no blank fallback."
+msgstr "Obligatoire. Aucune valeur de repli si le champ est vide."
+
+#: web/administration/discovery_guidance.py:31
+msgid "Uses the configured public website origin; omitted if none is configured."
+msgstr "Utilise l’adresse de base du site public configurée ; omise si aucune adresse n’est configurée."
+
+#: web/administration/discovery_guidance.py:32
+msgid "Uses the public origin followed by /en/."
+msgstr "Utilise l’adresse de base publique suivie de /en/."
+
+#: web/administration/discovery_guidance.py:33
+msgid "Uses the public origin followed by /fr/."
+msgstr "Utilise l’adresse de base publique suivie de /fr/."
+
+#: web/administration/discovery_guidance.py:34
+msgid "Deployment default follows the indexing configuration. Local and private pages always remain noindex."
+msgstr "La valeur par défaut suit la configuration d’indexation du déploiement. Les pages locales et privées restent toujours en noindex."
+
+#: web/administration/discovery_guidance.py:35
+msgid "Omitted; the search engine chooses its default image preview."
+msgstr "Omis ; le moteur de recherche choisit son aperçu d’image par défaut."
+
+#: web/administration/discovery_guidance.py:36
+msgid "Uses the site name."
+msgstr "Utilise le nom du site."
+
+#: web/administration/discovery_guidance.py:37
+msgid "Required. The initial default is website."
+msgstr "Obligatoire. La valeur initiale par défaut est website."
+
+#: web/administration/discovery_guidance.py:38
+msgid "Uses the first image on the current feed page; omitted on other pages without an image."
+msgstr "Utilise la première image de la page actuelle du fil ; omise sur les autres pages sans image."
+
+#: web/administration/discovery_guidance.py:39
+msgid "Required. The initial default is 1200 pixels; enter the actual image width."
+msgstr "Obligatoire. La valeur initiale est 1200 pixels ; saisissez la largeur réelle de l’image."
+
+#: web/administration/discovery_guidance.py:40
+msgid "Required. The initial default is 630 pixels; enter the actual image height."
+msgstr "Obligatoire. La valeur initiale est 630 pixels ; saisissez la hauteur réelle de l’image."
+
+#: web/administration/discovery_guidance.py:41
+msgid "Required. The initial default is en_GB."
+msgstr "Obligatoire. La valeur initiale par défaut est en_GB."
+
+#: web/administration/discovery_guidance.py:42
+msgid "Required. The initial default is fr_FR."
+msgstr "Obligatoire. La valeur initiale par défaut est fr_FR."
+
+#: web/administration/discovery_guidance.py:43
+msgid "Automatic chooses a large image card when an image exists, otherwise a summary card."
+msgstr "Le mode automatique choisit une carte avec grande image si une image existe, sinon une carte de résumé."
+
+#: web/administration/discovery_guidance.py:44
+msgid "Uses the default social image, then the first feed image; omitted if neither exists."
+msgstr "Utilise l’image sociale par défaut, puis la première image du fil ; omise si aucune n’existe."
+
+#: web/administration/discovery_guidance.py:45
+msgid "No icon link is added. The browser may still request /favicon.ico."
+msgstr "Aucun lien d’icône n’est ajouté. Le navigateur peut toutefois demander /favicon.ico."
+
+#: web/administration/discovery_guidance.py:46
+msgid "No Apple touch icon link is added."
+msgstr "Aucun lien d’icône Apple n’est ajouté."
+
+#: web/administration/discovery_guidance.py:47
+msgid "No browser theme colour is added."
+msgstr "Aucune couleur de thème du navigateur n’est ajoutée."
+
+#: web/administration/discovery_guidance.py:48
+msgid "No Google verification tag is added."
+msgstr "Aucune balise de vérification Google n’est ajoutée."
+
+#: web/administration/discovery_guidance.py:49
+msgid "No Bing verification tag is added."
+msgstr "Aucune balise de vérification Bing n’est ajoutée."
+
+#: web/administration/discovery_guidance.py:50
+msgid "Unchecked: no business structured data is published."
+msgstr "Option décochée : aucune donnée structurée de l’entreprise n’est publiée."
+
+#: web/administration/discovery_guidance.py:51
+msgid "Required. The initial default is HomeAndConstructionBusiness."
+msgstr "Obligatoire. La valeur initiale par défaut est HomeAndConstructionBusiness."
+
+#: web/administration/discovery_guidance.py:52
+msgid "Uses the business website URL followed by #business."
+msgstr "Utilise l’URL du site de l’entreprise suivie de #business."
+
+#: web/administration/discovery_guidance.py:53
+msgid "No name fallback. A real business name is required when business structured data is enabled."
+msgstr "Aucun nom de repli. Le nom réel de l’entreprise est obligatoire lorsque les données structurées sont activées."
+
+#: web/administration/discovery_guidance.py:54
+msgid "Uses the public website origin."
+msgstr "Utilise l’adresse de base du site public."
+
+#: web/administration/discovery_guidance.py:55
+msgid "Uses the default social image; omitted if none is configured."
+msgstr "Utilise l’image sociale par défaut ; omise si aucune n’est configurée."
+
+#: web/administration/discovery_guidance.py:56
+#: web/administration/discovery_guidance.py:61
+msgid "Omitted from business structured data."
+msgstr "Omis des données structurées de l’entreprise."
+
+#: web/administration/discovery_guidance.py:57
+msgid "No address fallback. Required when business structured data is enabled."
+msgstr "Aucune adresse de repli. Obligatoire lorsque les données structurées de l’entreprise sont activées."
+
+#: web/administration/discovery_guidance.py:58
+msgid "No town fallback. Required when business structured data is enabled."
+msgstr "Aucune ville de repli. Obligatoire lorsque les données structurées de l’entreprise sont activées."
+
+#: web/administration/discovery_guidance.py:59
+msgid "No postcode fallback. Required when business structured data is enabled."
+msgstr "Aucun code postal de repli. Obligatoire lorsque les données structurées de l’entreprise sont activées."
+
+#: web/administration/discovery_guidance.py:60
+msgid "Required. The initial default is GB."
+msgstr "Obligatoire. La valeur initiale par défaut est GB."
+
+#: web/administration/discovery_guidance.py:74
+msgid "Discover our latest projects and get in touch."
+msgstr "Découvrez nos derniers projets et contactez-nous."
+
+#: web/administration/discovery_guidance.py:77
+msgid "Uses the other language if supplied, then the page name and site name."
+msgstr "Utilise l’autre langue si elle est renseignée, puis le nom de la page et du site."
+
+#: web/administration/discovery_guidance.py:78
+msgid "Uses the other language if supplied, then the site introduction, then the page title."
+msgstr "Utilise l’autre langue si elle est renseignée, puis la présentation du site et enfin le titre de la page."
+
+#: web/administration/discovery_guidance.py:84
+msgid "Projects, stories and inspiration from Fieldnotes."
+msgstr "Projets, récits et inspirations de Fieldnotes."
+
+#: web/administration/discovery_guidance.py:85
+msgid "A bright living room designed by Fieldnotes"
+msgstr "Un salon lumineux conçu par Fieldnotes"
+
+#: web/administration/discovery_guidance.py:86
+msgid "See our latest projects and stories."
+msgstr "Découvrez nos derniers projets et publications."
+
+#: web/administration/discovery_guidance.py:87
+msgid "Interior design and renovation services."
+msgstr "Services de décoration intérieure et de rénovation."
+
+#: web/administration/discovery_guidance.py:95
+msgid "Uses the other language if supplied, then each page’s own title or description."
+msgstr "Utilise l’autre langue si elle est renseignée, puis le titre ou la description propre à chaque page."
+
+#: web/administration/discovery_guidance.py:98
+msgid "Uses the homepage canonical URL. Other pages always use their own canonical URL."
+msgstr "Utilise l’URL canonique de la page d’accueil. Les autres pages utilisent toujours leur propre URL canonique."
+
+#: web/administration/discovery_guidance.py:101
+msgid "Uses the other language if supplied; omitted if both languages are blank."
+msgstr "Utilise l’autre langue si elle est renseignée ; omis si les deux langues sont vides."
+
+#: web/administration/forms.py:14
+msgid "Username"
+msgstr "Nom d’utilisateur"
+
+#: web/administration/forms.py:15
+#: web/administration/templates/administration/base.html:3
+msgid "Password"
+msgstr "Mot de passe"
+
+#: web/administration/forms.py:25
+msgid "I confirm removing this published story from the public feed"
+msgstr "Je confirme le retrait de cette publication du fil public"
+
+#: web/administration/forms.py:30
+msgid "Display caption"
+msgstr "Légende affichée"
+
+#: web/administration/forms.py:30
+msgid "Display date"
+msgstr "Date d’affichage"
+
+#: web/administration/forms.py:30
+msgid "Priority"
+msgstr "Priorité"
+
+#: web/administration/forms.py:30 web/administration/forms.py:84
+#: web/administration/templates/administration/items.html:4
+msgid "Status"
+msgstr "Statut"
+
+#: web/administration/forms.py:30
+msgid "Publish at"
+msgstr "Date de publication"
+
+#: web/administration/forms.py:32
+msgid "Leave blank to use the original caption. Keep its original language."
+msgstr "Laissez ce champ vide pour utiliser la légende originale. Conservez sa langue d’origine."
+
+#: web/administration/forms.py:32
+msgid "Local site time (Europe/London). Format: YYYY-MM-DD HH:MM:SS."
+msgstr "Heure locale du site (Europe/London). Format : AAAA-MM-JJ HH:MM:SS."
+
+#: web/administration/forms.py:32
+msgid "Publication time in Europe/London. Required for Published status."
+msgstr "Heure de publication dans le fuseau Europe/London. Obligatoire pour le statut Publié."
+
+#: web/administration/forms.py:42
+msgid "Journal label (English)"
+msgstr "Libellé du journal (anglais)"
+
+#: web/administration/forms.py:42
+msgid "Journal label (French)"
+msgstr "Libellé du journal (français)"
+
+#: web/administration/forms.py:43
+msgid "Main feed heading (English)"
+msgstr "Titre du fil principal (anglais)"
+
+#: web/administration/forms.py:43
+msgid "Main feed heading (French)"
+msgstr "Titre du fil principal (français)"
+
+#: web/administration/forms.py:44
+msgid "Site name"
+msgstr "Nom du site"
+
+#: web/administration/forms.py:44
+msgid "Introduction (English)"
+msgstr "Introduction (anglais)"
+
+#: web/administration/forms.py:44
+msgid "Introduction (French)"
+msgstr "Introduction (français)"
+
+#: web/administration/forms.py:45
+msgid "Footer (English)"
+msgstr "Pied de page (anglais)"
+
+#: web/administration/forms.py:45
+msgid "Footer (French)"
+msgstr "Pied de page (français)"
+
+#: web/administration/forms.py:46
+msgid "Empty feed message (English)"
+msgstr "Message du fil vide (anglais)"
+
+#: web/administration/forms.py:46
+msgid "Empty feed message (French)"
+msgstr "Message du fil vide (français)"
+
+#: web/administration/forms.py:47
+msgid "Feed title (English)"
+msgstr "Titre du fil (anglais)"
+
+#: web/administration/forms.py:48
+msgid "Feed title (French)"
+msgstr "Titre du fil (français)"
+
+#: web/administration/forms.py:49
+msgid "Feed description (English)"
+msgstr "Description du fil (anglais)"
+
+#: web/administration/forms.py:50
+msgid "Feed description (French)"
+msgstr "Description du fil (français)"
+
+#: web/administration/forms.py:51
+msgid "Reviews title (English)"
+msgstr "Titre des avis (anglais)"
+
+#: web/administration/forms.py:52
+msgid "Reviews title (French)"
+msgstr "Titre des avis (français)"
+
+#: web/administration/forms.py:53
+msgid "Reviews description (English)"
+msgstr "Description des avis (anglais)"
+
+#: web/administration/forms.py:54
+msgid "Reviews description (French)"
+msgstr "Description des avis (français)"
+
+#: web/administration/forms.py:55
+msgid "Contact title (English)"
+msgstr "Titre du contact (anglais)"
+
+#: web/administration/forms.py:56
+msgid "Contact title (French)"
+msgstr "Titre du contact (français)"
+
+#: web/administration/forms.py:57
+msgid "Contact description (English)"
+msgstr "Description du contact (anglais)"
+
+#: web/administration/forms.py:58
+msgid "Contact description (French)"
+msgstr "Description du contact (français)"
+
+#: web/administration/forms.py:59
+msgid "Default language"
+msgstr "Langue par défaut"
+
+#: web/administration/forms.py:59
+msgid "Enable English"
+msgstr "Activer l’anglais"
+
+#: web/administration/forms.py:60
+msgid "Enable French"
+msgstr "Activer le français"
+
+#: web/administration/forms.py:60
+msgid "Stories per page"
+msgstr "Publications par page"
+
+#: web/administration/forms.py:62 web/administration/forms.py:221
+msgid "Leave blank to use the locale fallback and page defaults. Plain text only."
+msgstr "Laissez vide pour utiliser les textes de repli et les valeurs par défaut de la page. Texte brut uniquement."
+
+#: web/administration/forms.py:73
+msgid "Leave blank to use the language fallback or the default text. Plain text only."
+msgstr "Laissez vide pour utiliser la langue de repli ou le texte par défaut. Texte brut uniquement."
+
+#: web/administration/forms.py:78
+msgid "Main feed introduction"
+msgstr "Présentation du fil principal"
+
+#: web/administration/forms.py:79
+msgid "Site settings"
+msgstr "Paramètres du site"
+
+#: web/administration/forms.py:83
+msgid "Search caption, source ID or URL"
+msgstr "Rechercher par légende, identifiant source ou URL"
+
+#: web/administration/forms.py:84
+msgid "All statuses"
+msgstr "Tous les statuts"
+
+#: web/administration/forms.py:85
+msgid "From date"
+msgstr "À partir du"
+
+#: web/administration/forms.py:86
+msgid "To date"
+msgstr "Jusqu’au"
+
+#: web/administration/forms.py:91
+msgid "The start date must precede the end date."
+msgstr "La date de début doit précéder la date de fin."
+
+#: web/administration/forms.py:97
+msgid "New image"
+msgstr "Nouvelle image"
+
+#: web/administration/forms.py:97
+msgid "Single PNG, JPEG or WebP, up to 10 MiB and 20 million pixels. Leave blank to edit descriptions only."
+msgstr "Une seule image PNG, JPEG ou WebP, jusqu’à 10 Mio et 20 millions de pixels. Laissez ce champ vide pour modifier uniquement les descriptions."
+
+#: web/administration/forms.py:98
+msgid "Image description (English)"
+msgstr "Description de l’image (anglais)"
+
+#: web/administration/forms.py:99
+msgid "Image description (French)"
+msgstr "Description de l’image (français)"
+
+#: web/administration/forms.py:104
+msgid "New decorative background image"
+msgstr "Nouvelle image décorative d’arrière-plan"
+
+#: web/administration/forms.py:104
+msgid "PNG, JPEG or WebP, up to 10 MiB. Uploads are applied on Save; previews show colours and fonts."
+msgstr "PNG, JPEG ou WebP, jusqu’à 10 Mio. L’image est appliquée à l’enregistrement ; l’aperçu montre les couleurs et les polices."
+
+#: web/administration/forms.py:105
+msgid "Remove the current background image"
+msgstr "Retirer l’image d’arrière-plan actuelle"
+
+#: web/administration/forms.py:110
+msgid "Page colour"
+msgstr "Couleur de la page"
+
+#: web/administration/forms.py:110
+msgid "Text colour"
+msgstr "Couleur du texte"
+
+#: web/administration/forms.py:110
+msgid "Secondary text colour"
+msgstr "Couleur du texte secondaire"
+
+#: web/administration/forms.py:110
+msgid "Accent colour"
+msgstr "Couleur d’accent"
+
+#: web/administration/forms.py:110
+msgid "Font"
+msgstr "Police"
+
+#: web/administration/forms.py:121
+msgid "I confirm replacing the current settings with this saved version."
+msgstr "Je confirme le remplacement des paramètres actuels par cette version enregistrée."
+
+#: web/administration/forms.py:125
+msgid "Instagram username"
+msgstr "Nom d’utilisateur Instagram"
+
+#: web/administration/forms.py:127
+msgid "Instagram password"
+msgstr "Mot de passe Instagram"
+
+#: web/administration/forms.py:128
+msgid "Leave blank to keep the saved password for this username."
+msgstr "Laissez ce champ vide pour conserver le mot de passe enregistré pour ce compte."
+
+#: web/administration/forms.py:133
+msgid "Two-factor or backup code (when requested)"
+msgstr "Code de double authentification ou de secours (si demandé)"
+
+#: web/administration/forms.py:138
+msgid "Recent posts to load"
+msgstr "Nombre de publications récentes à charger"
+
+#: web/administration/forms.py:153
+msgid "Public website origin"
+msgstr "Adresse de base du site public"
+
+#: web/administration/forms.py:154
+msgid "Homepage canonical URL (EN)"
+msgstr "URL canonique de l’accueil (EN)"
+
+#: web/administration/forms.py:155
+msgid "Homepage canonical URL (FR)"
+msgstr "URL canonique de l’accueil (FR)"
+
+#: web/administration/forms.py:156
+msgid "Search engine indexing"
+msgstr "Indexation par les moteurs de recherche"
+
+#: web/administration/forms.py:157
+msgid "Maximum image preview"
+msgstr "Taille maximale de l’aperçu des images"
+
+#: web/administration/forms.py:158
+msgid "Social site name"
+msgstr "Nom du site pour les réseaux sociaux"
+
+#: web/administration/forms.py:159
+msgid "Open Graph type"
+msgstr "Type Open Graph"
+
+#: web/administration/forms.py:160
+msgid "Default social image URL"
+msgstr "URL de l’image sociale par défaut"
+
+#: web/administration/forms.py:161
+msgid "Social image width (pixels)"
+msgstr "Largeur de l’image sociale (pixels)"
+
+#: web/administration/forms.py:162
+msgid "Social image height (pixels)"
+msgstr "Hauteur de l’image sociale (pixels)"
+
+#: web/administration/forms.py:163
+msgid "Open Graph locale (EN)"
+msgstr "Code régional Open Graph (EN)"
+
+#: web/administration/forms.py:164
+msgid "Open Graph locale (FR)"
+msgstr "Code régional Open Graph (FR)"
+
+#: web/administration/forms.py:165
+msgid "X / Twitter card"
+msgstr "Carte X / Twitter"
+
+#: web/administration/forms.py:166
+msgid "X / Twitter image URL"
+msgstr "URL de l’image X / Twitter"
+
+#: web/administration/forms.py:167
+msgid "Favicon URL or path"
+msgstr "URL ou chemin de la favicon"
+
+#: web/administration/forms.py:168
+msgid "Apple touch icon URL or path"
+msgstr "URL ou chemin de l’icône Apple"
+
+#: web/administration/forms.py:169
+msgid "Browser theme colour"
+msgstr "Couleur du thème du navigateur"
+
+#: web/administration/forms.py:170
+msgid "Google verification token"
+msgstr "Code de vérification Google"
+
+#: web/administration/forms.py:171
+msgid "Bing verification token"
+msgstr "Code de vérification Bing"
+
+#: web/administration/forms.py:172
+msgid "Publish business structured data"
+msgstr "Publier les données structurées de l’entreprise"
+
+#: web/administration/forms.py:173
+msgid "Business schema type"
+msgstr "Type Schema.org de l’entreprise"
+
+#: web/administration/forms.py:174
+msgid "Business identifier URL (@id)"
+msgstr "URL d’identification de l’entreprise (@id)"
+
+#: web/administration/forms.py:175
+msgid "Business name"
+msgstr "Nom de l’entreprise"
+
+#: web/administration/forms.py:176
+msgid "Business website URL"
+msgstr "URL du site de l’entreprise"
+
+#: web/administration/forms.py:177
+msgid "Business image URL"
+msgstr "URL de l’image de l’entreprise"
+
+#: web/administration/forms.py:178
+msgid "Price range"
+msgstr "Gamme de prix"
+
+#: web/administration/forms.py:179
+msgid "Street address"
+msgstr "Adresse"
+
+#: web/administration/forms.py:180
+msgid "Town or city"
+msgstr "Ville"
+
+#: web/administration/forms.py:181
+msgid "Postcode"
+msgstr "Code postal"
+
+#: web/administration/forms.py:182
+msgid "Country code"
+msgstr "Code du pays"
+
+#: web/administration/forms.py:183
+msgid "Country served"
+msgstr "Pays desservi"
+
+#: web/administration/forms.py:186
+msgid "Your HTTPS domain, for example https://yourbrand.com. Blank uses the current website address."
+msgstr "Votre domaine HTTPS, par exemple https://votremarque.fr. Laissez vide pour utiliser l’adresse actuelle du site."
+
+#: web/administration/forms.py:187
+msgid "Optional exact homepage URL. Other pages keep their own canonical URLs."
+msgstr "URL exacte facultative de l’accueil. Les autres pages conservent leurs propres URL canoniques."
+
+#: web/administration/forms.py:188
+msgid "Optional exact French homepage URL."
+msgstr "URL exacte facultative de l’accueil français."
+
+#: web/administration/forms.py:189
+msgid "Private previews stay hidden from search engines. Indexing also requires the public deployment to allow it."
+msgstr "Les aperçus privés restent masqués aux moteurs de recherche. Le déploiement public doit également autoriser l’indexation."
+
+#: web/administration/forms.py:190
+msgid "An existing HTTPS image URL. Enter its actual dimensions and a description below."
+msgstr "URL HTTPS d’une image existante. Indiquez ses dimensions réelles et sa description ci-dessous."
+
+#: web/administration/forms.py:191
+msgid "Blank uses the default social image or the first published image."
+msgstr "Laissez vide pour utiliser l’image sociale par défaut ou la première image publiée."
+
+#: web/administration/forms.py:192
+msgid "An existing asset, for example /favicon.ico or an HTTPS URL. This field does not upload a file."
+msgstr "Un fichier existant, par exemple /favicon.ico ou une URL HTTPS. Ce champ ne téléverse pas de fichier."
+
+#: web/administration/forms.py:193
+msgid "An existing asset, for example /apple-touch-icon.png or an HTTPS URL."
+msgstr "Un fichier existant, par exemple /apple-touch-icon.png ou une URL HTTPS."
+
+#: web/administration/forms.py:194
+msgid "Six-digit hex colour, for example #ffffff."
+msgstr "Couleur hexadécimale à six chiffres, par exemple #ffffff."
+
+#: web/administration/forms.py:195 web/administration/forms.py:196
+msgid "Paste only the verification token, not a meta tag. It will be public."
+msgstr "Collez uniquement le code de vérification, sans balise meta. Il sera public."
+
+#: web/administration/forms.py:197
+msgid "Enable only after entering your real business name and address. These details will be public."
+msgstr "Activez cette option après avoir saisi le nom et l’adresse réels de votre entreprise. Ces informations seront publiques."
+
+#: web/administration/forms.py:198
+msgid "Blank uses your business URL followed by #business."
+msgstr "Laissez vide pour utiliser l’URL de votre entreprise suivie de #business."
+
+#: web/administration/forms.py:199
+msgid "Blank uses your public website origin."
+msgstr "Laissez vide pour utiliser l’adresse de base du site public."
+
+#: web/administration/forms.py:200
+msgid "Blank uses the default social image."
+msgstr "Laissez vide pour utiliser l’image sociale par défaut."
+
+#: web/administration/forms.py:201
+msgid "For example ££. Leave blank if not applicable."
+msgstr "Par exemple ££. Laissez vide si cela ne s’applique pas."
+
+#: web/administration/forms.py:202
+msgid "Two-letter country code, for example GB."
+msgstr "Code du pays à deux lettres, par exemple GB."
+
+#: web/administration/forms.py:203
+msgid "Country name, for example United Kingdom."
+msgstr "Nom du pays, par exemple Royaume-Uni."
+
+#: web/administration/forms.py:209
+#: web/administration/templates/administration/discovery.html:12
+msgid "Open Graph title"
+msgstr "Titre Open Graph"
+
+#: web/administration/forms.py:209
+#: web/administration/templates/administration/discovery.html:12
+msgid "Open Graph description"
+msgstr "Description Open Graph"
+
+#: web/administration/forms.py:210
+msgid "Homepage Open Graph URL"
+msgstr "URL Open Graph de l’accueil"
+
+#: web/administration/forms.py:210
+msgid "Social image description"
+msgstr "Description de l’image sociale"
+
+#: web/administration/forms.py:211
+#: web/administration/templates/administration/discovery.html:12
+msgid "X / Twitter title"
+msgstr "Titre X / Twitter"
+
+#: web/administration/forms.py:211
+#: web/administration/templates/administration/discovery.html:12
+msgid "X / Twitter description"
+msgstr "Description X / Twitter"
+
+#: web/administration/forms.py:212
+msgid "Business description"
+msgstr "Description de l’entreprise"
+
+#: web/administration/forms.py:217
+msgid "Leave blank to use the relevant page or language fallback."
+msgstr "Laissez vide pour utiliser les valeurs de la page ou de la langue de secours."
+
+#: web/administration/forms.py:223
+msgid "Language and country, for example en_GB."
+msgstr "Langue et pays, par exemple en_GB."
+
+#: web/administration/forms.py:224
+msgid "Language and country, for example fr_FR."
+msgstr "Langue et pays, par exemple fr_FR."
+
+#: web/administration/forms.py:231
+msgid "Primary SEO"
+msgstr "Référencement principal"
+
+#: web/administration/forms.py:232
+msgid "Open Graph"
+msgstr "Open Graph"
+
+#: web/administration/forms.py:233
+msgid "X / Twitter"
+msgstr "X / Twitter"
+
+#: web/administration/forms.py:234
+msgid "Site identity"
+msgstr "Identité du site"
+
+#: web/administration/forms.py:235
+msgid "Search engine verification"
+msgstr "Vérification des moteurs de recherche"
+
+#: web/administration/forms.py:236
+msgid "Business structured data"
+msgstr "Données structurées de l’entreprise"
+
+#: web/administration/forms.py:247
+msgid "Public email address"
+msgstr "Adresse e-mail publique"
+
+#: web/administration/forms.py:247
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: web/administration/forms.py:248
+msgid "Postal address"
+msgstr "Adresse postale"
+
+#: web/administration/forms.py:248
+msgid "Contact introduction (English)"
+msgstr "Présentation du contact (anglais)"
+
+#: web/administration/forms.py:249
+msgid "Contact introduction (French)"
+msgstr "Présentation du contact (français)"
+
+#: web/administration/forms.py:250
+msgid "Opening hours (English)"
+msgstr "Horaires d’ouverture (anglais)"
+
+#: web/administration/forms.py:250
+msgid "Opening hours (French)"
+msgstr "Horaires d’ouverture (français)"
+
+#: web/administration/forms.py:260
+msgid "Show the reviews page"
+msgstr "Afficher la page des avis"
+
+#: web/administration/forms.py:261
+msgid "When disabled, Reviews is hidden from navigation and the sitemap, and the public page is unavailable. Existing reviews are retained."
+msgstr "Lorsque cette option est désactivée, les avis sont masqués dans la navigation et le plan du site, et la page publique est inaccessible. Les avis existants sont conservés."
+
+#: web/administration/forms.py:266
+msgid "I confirm deleting this story from the site."
+msgstr "Je confirme la suppression de cette publication du site."
+
+#: web/administration/forms.py:271
+msgid "Enable contact email delivery"
+msgstr "Activer l’envoi des messages du formulaire de contact"
+
+#: web/administration/forms.py:273
+msgid "SMTP hostname"
+msgstr "Nom d’hôte SMTP"
+
+#: web/administration/forms.py:274
+msgid "SMTP port"
+msgstr "Port SMTP"
+
+#: web/administration/forms.py:275
+msgid "STARTTLS (usually port 587)"
+msgstr "STARTTLS (généralement port 587)"
+
+#: web/administration/forms.py:275
+msgid "SSL/TLS (usually port 465)"
+msgstr "SSL/TLS (généralement port 465)"
+
+#: web/administration/forms.py:275
+msgid "None (local mail server)"
+msgstr "Aucune (serveur de messagerie local)"
+
+#: web/administration/forms.py:275
+msgid "Connection security"
+msgstr "Sécurité de la connexion"
+
+#: web/administration/forms.py:276
+msgid "Sender email address"
+msgstr "Adresse e-mail de l’expéditeur"
+
+#: web/administration/forms.py:277
+msgid "Use an address your email provider permits you to send from."
+msgstr "Utilisez une adresse autorisée par votre fournisseur de messagerie pour l’envoi."
+
+#: web/administration/forms.py:278
+msgid "SMTP username"
+msgstr "Nom d’utilisateur SMTP"
+
+#: web/administration/forms.py:280
+msgid "SMTP password or app password"
+msgstr "Mot de passe SMTP ou mot de passe d’application"
+
+#: web/administration/forms.py:282
+msgid "Leave blank to keep the saved password. The saved password is never displayed."
+msgstr "Laissez vide pour conserver le mot de passe enregistré. Le mot de passe enregistré n’est jamais affiché."
+
+#: web/administration/forms.py:283
+msgid "Remove the saved SMTP password"
+msgstr "Supprimer le mot de passe SMTP enregistré"
+
+#: web/administration/forms.py:288
+msgid "Enter a new password or remove the saved password, not both."
+msgstr "Saisissez un nouveau mot de passe ou supprimez le mot de passe enregistré, sans combiner les deux."
+
+#: web/administration/forms.py:292
+msgid "This field is required to enable email delivery."
+msgstr "Ce champ est obligatoire pour activer l’envoi des messages."
+
+#: web/administration/forms.py:306
+msgid "Policy title"
+msgstr "Titre de la politique"
+
+#: web/administration/forms.py:306
+msgid "Policy site name"
+msgstr "Nom du site dans la politique"
+
+#: web/administration/forms.py:307
+msgid "Operator or business name"
+msgstr "Nom de l’exploitant ou de l’entreprise"
+
+#: web/administration/forms.py:308
+msgid "Policy contact address"
+msgstr "Adresse de contact pour la politique"
+
+#: web/administration/forms.py:308
+msgid "Last updated date"
+msgstr "Date de dernière mise à jour"
+
+#: web/administration/forms.py:309
+msgid "Full policy text"
+msgstr "Texte intégral de la politique"
+
+#: web/administration/forms.py:312
+#, python-brace-format
+msgid "Use blank lines between paragraphs and ## before section headings. The placeholders {site_name}, {operator_name}, {contact_email} and {contact_address} use the details above. HTML is displayed as plain text."
+msgstr "Séparez les paragraphes par des lignes vides et commencez les titres de section par ##. Les variables {site_name}, {operator_name}, {contact_email} et {contact_address} reprennent les informations ci-dessus. Le HTML est affiché en texte brut."
+
+#: web/administration/instagram_client.py:28
+#: web/administration/instagram_client.py:34
+msgid "The Instagram service is not configured."
+msgstr "Le service Instagram n’est pas configuré."
+
+#: web/administration/instagram_client.py:32
+msgid "The Instagram service is unavailable. Ask your operator to start it."
+msgstr "Le service Instagram est indisponible. Demandez à votre opérateur de le démarrer."
+
+#: web/administration/instagram_client.py:48
+msgid "Instagram returned too much data. Try a smaller import."
+msgstr "Instagram a renvoyé trop de données. Essayez une importation plus petite."
+
+#: web/administration/instagram_client.py:58
+msgid "Enter a fresh two-factor code and connect again."
+msgstr "Saisissez un nouveau code de double authentification et reconnectez-vous."
+
+#: web/administration/instagram_client.py:59
+msgid "Complete the account challenge directly in Instagram, then connect again."
+msgstr "Effectuez la vérification du compte directement dans Instagram, puis reconnectez-vous."
+
+#: web/administration/instagram_client.py:60
+msgid "Your Instagram session expired. Connect again."
+msgstr "Votre session Instagram a expiré. Reconnectez-vous."
+
+#: web/administration/instagram_client.py:61
+msgid "Instagram rejected the login. Check your account details."
+msgstr "Instagram a refusé la connexion. Vérifiez les identifiants de votre compte."
+
+#: web/administration/instagram_client.py:62
+msgid "Connect your Instagram account first."
+msgstr "Connectez d’abord votre compte Instagram."
+
+#: web/administration/instagram_client.py:63
+msgid "Save your Instagram account details first."
+msgstr "Enregistrez d’abord les identifiants de votre compte Instagram."
+
+#: web/administration/instagram_client.py:64
+msgid "Instagram returned a different account. Reconnect the intended account."
+msgstr "Instagram a renvoyé un autre compte. Reconnectez le compte souhaité."
+
+#: web/administration/instagram_client.py:65
+msgid "Instagram requested a pause. Try again later."
+msgstr "Instagram demande une pause. Réessayez plus tard."
+
+#: web/administration/instagram_client.py:66
+msgid "Instagram restricted this request. Check your account in Instagram."
+msgstr "Instagram a limité cette demande. Vérifiez votre compte dans Instagram."
+
+#: web/administration/instagram_client.py:68
+msgid "The Instagram request failed. Existing website stories were retained."
+msgstr "La demande Instagram a échoué. Les publications existantes du site ont été conservées."
+
+#: web/administration/instagram_client.py:70
+msgid "The Instagram service could not be reached. Existing website stories were retained."
+msgstr "Le service Instagram est injoignable. Les publications existantes du site ont été conservées."
+
+#: web/administration/templates/administration/audit.html:3
+#: web/administration/templates/administration/base.html:3
+msgid "Audit trail"
+msgstr "Journal des modifications"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "CHANGE HISTORY"
+msgstr "HISTORIQUE DES MODIFICATIONS"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "A record of changes."
+msgstr "L’historique de vos changements."
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Latest 100 events. Field names are recorded here; previous content is retained separately."
+msgstr "Les 100 derniers événements. Les noms des champs figurent ici ; le contenu précédent est conservé séparément."
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Read-only audit trail"
+msgstr "Journal des modifications en lecture seule"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "When (Europe/London)"
+msgstr "Date (Europe/London)"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Who"
+msgstr "Auteur"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Action"
+msgstr "Action"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Record"
+msgstr "Élément"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "Fields"
+msgstr "Champs"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "View previous version"
+msgstr "Voir la version précédente"
+
+#: web/administration/templates/administration/audit.html:4
+#: web/administration/templates/administration/revision.html:4
+msgid "View restoration source"
+msgstr "Voir la version source de la restauration"
+
+#: web/administration/templates/administration/audit.html:4
+msgid "No events recorded."
+msgstr "Aucun événement enregistré."
+
+#: web/administration/templates/administration/base.html:2
+#: web/administration/templates/administration/base.html:3
+msgid "Administration"
+msgstr "Administration"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: web/administration/templates/administration/base.html:3
+msgid "/ Owner"
+msgstr "/ Propriétaire"
+
+#: web/administration/templates/administration/base.html:3
+#: web/administration/templates/administration/items.html:3
+msgid "Stories"
+msgstr "Publications"
+
+#: web/administration/templates/administration/base.html:3
+#: web/administration/templates/administration/site_edit.html:3
+msgid "Site copy"
+msgstr "Textes du site"
+
+#: web/administration/templates/administration/base.html:3
+#: web/administration/templates/administration/discovery.html:2
+msgid "SEO & business"
+msgstr "Référencement et entreprise"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Contact"
+msgstr "Contact"
+
+#: web/administration/templates/administration/base.html:3
+#: web/administration/templates/administration/policy.html:2
+#: web/administration/templates/administration/policy.html:4
+msgid "Site policy"
+msgstr "Politique du site"
+
+#: web/administration/templates/administration/base.html:3
+#: web/administration/templates/administration/reviews.html:3
+#: web/administration/templates/administration/reviews.html:5
+msgid "Reviews"
+msgstr "Avis"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Appearance"
+msgstr "Apparence"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Instagram"
+msgstr "Instagram"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Log out"
+msgstr "Se déconnecter"
+
+#: web/administration/templates/administration/base.html:3
+msgid "Language"
+msgstr "Langue"
+
+#: web/administration/templates/administration/contact.html:3
+#: web/administration/templates/administration/contact.html:5
+msgid "Contact details"
+msgstr "Coordonnées"
+
+#: web/administration/templates/administration/contact.html:5
+msgid "These details appear on the public Contact page. Leave any optional details blank to hide them."
+msgstr "Ces coordonnées apparaissent sur la page Contact du site. Laissez les champs facultatifs vides pour les masquer."
+
+#: web/administration/templates/administration/contact.html:6
+#: web/administration/templates/administration/password.html:6
+#: web/administration/templates/administration/reviews.html:6
+msgid "Changes saved."
+msgstr "Modifications enregistrées."
+
+#: web/administration/templates/administration/contact.html:7
+#: web/administration/templates/administration/password.html:8
+#: web/administration/templates/administration/reviews.html:8
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: web/administration/templates/administration/contact.html:8
+msgid "Email delivery"
+msgstr "Envoi des messages"
+
+#: web/administration/templates/administration/contact.html:8
+msgid "Contact form enquiries are emailed to the public email address above. Configure the service that sends those emails here."
+msgstr "Les demandes du formulaire de contact sont envoyées à l’adresse e-mail publique ci-dessus. Configurez ici le service qui envoie ces messages."
+
+#: web/administration/templates/administration/contact.html:8
+msgid "Email delivery settings saved."
+msgstr "Paramètres d’envoi des messages enregistrés."
+
+#: web/administration/templates/administration/contact.html:8
+msgid "An SMTP password is saved."
+msgstr "Un mot de passe SMTP est enregistré."
+
+#: web/administration/templates/administration/contact.html:8
+msgid "Save email delivery settings"
+msgstr "Enregistrer les paramètres d’envoi des messages"
+
+#: web/administration/templates/administration/discovery.html:4
+msgid "SITE DISCOVERY"
+msgstr "VISIBILITÉ DU SITE"
+
+#: web/administration/templates/administration/discovery.html:4
+msgid "Shape how your business appears."
+msgstr "Personnalisez la présentation de votre entreprise."
+
+#: web/administration/templates/administration/discovery.html:4
+msgid "Manage search results, social previews, browser icons and your business details."
+msgstr "Gérez les résultats de recherche, les aperçus sociaux, les icônes du navigateur et les informations de votre entreprise."
+
+#: web/administration/templates/administration/discovery.html:5
+msgid "Discovery settings saved. The previous version is retained in history."
+msgstr "Les paramètres de visibilité ont été enregistrés. La version précédente est conservée dans l’historique."
+
+#: web/administration/templates/administration/discovery.html:6
+#: web/administration/templates/administration/policy.html:5
+#: web/administration/templates/administration/site_edit.html:4
+#: web/administration/templates/administration/theme.html:4
+msgid "View settings history"
+msgstr "Voir l’historique des paramètres"
+
+#: web/administration/templates/administration/discovery.html:7
+msgid "Titles and descriptions are shared with Site copy settings. UTF-8 and the responsive viewport are provided automatically."
+msgstr "Les titres et descriptions sont partagés avec les paramètres des textes du site. UTF-8 et l’affichage adaptatif sont fournis automatiquement."
+
+#: web/administration/templates/administration/discovery.html:9
+msgid "Settings sections"
+msgstr "Sections des paramètres"
+
+#: web/administration/templates/administration/discovery.html:10
+msgid "Example:"
+msgstr "Exemple :"
+
+#: web/administration/templates/administration/discovery.html:10
+msgid "Fallback:"
+msgstr "Valeur de repli :"
+
+#: web/administration/templates/administration/discovery.html:10
+msgid "Current fallback:"
+msgstr "Valeur de repli actuelle :"
+
+#: web/administration/templates/administration/discovery.html:11
+msgid "Preview metadata"
+msgstr "Prévisualiser les métadonnées"
+
+#: web/administration/templates/administration/discovery.html:11
+msgid "Save discovery settings"
+msgstr "Enregistrer les paramètres de visibilité"
+
+#: web/administration/templates/administration/discovery.html:12
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Search and sharing preview"
+msgstr "Aperçu pour la recherche et le partage"
+
+#: web/administration/templates/administration/discovery.html:12
+#: web/administration/templates/administration/item_edit.html:4
+#: web/administration/templates/administration/policy.html:10
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Preview only. Changes have not been saved."
+msgstr "Aperçu uniquement. Les modifications n’ont pas été enregistrées."
+
+#: web/administration/templates/administration/discovery.html:12
+msgid "Canonical URL"
+msgstr "URL canonique"
+
+#: web/administration/templates/administration/discovery.html:12
+msgid "Robots"
+msgstr "Robots"
+
+#: web/administration/templates/administration/discovery.html:12
+msgid "Business JSON-LD"
+msgstr "JSON-LD de l’entreprise"
+
+#: web/administration/templates/administration/instagram.html:2
+msgid "Instagram connection"
+msgstr "Connexion Instagram"
+
+#: web/administration/templates/administration/instagram.html:4
+msgid "INSTAGRAM"
+msgstr "INSTAGRAM"
+
+#: web/administration/templates/administration/instagram.html:4
+msgid "Connect Instagram and load your stories."
+msgstr "Connectez Instagram et chargez vos publications."
+
+#: web/administration/templates/administration/instagram.html:4
+msgid "Save your account, verify the connection, then bring recent images and original captions onto your website."
+msgstr "Enregistrez votre compte, vérifiez la connexion, puis importez les images récentes et leurs légendes originales sur votre site."
+
+#: web/administration/templates/administration/instagram.html:6
+msgid "Session saved"
+msgstr "Session enregistrée"
+
+#: web/administration/templates/administration/instagram.html:6
+msgid "Not connected"
+msgstr "Non connecté"
+
+#: web/administration/templates/administration/instagram.html:6
+msgid "Last verified"
+msgstr "Dernière vérification"
+
+#: web/administration/templates/administration/instagram.html:6
+msgid "A saved session may expire. If Instagram asks for verification, reconnect here or complete the challenge directly in Instagram."
+msgstr "Une session enregistrée peut expirer. Si Instagram demande une vérification, reconnectez-vous ici ou effectuez-la directement dans Instagram."
+
+#: web/administration/templates/administration/instagram.html:7
+msgid "1. Account details"
+msgstr "1. Identifiants du compte"
+
+#: web/administration/templates/administration/instagram.html:7
+msgid "Save account details"
+msgstr "Enregistrer les identifiants"
+
+#: web/administration/templates/administration/instagram.html:7
+msgid "Your password and session are encrypted in the separate Instagram service. They are never stored in site content."
+msgstr "Votre mot de passe et votre session sont chiffrés dans le service Instagram séparé. Ils ne sont jamais enregistrés dans le contenu du site."
+
+#: web/administration/templates/administration/instagram.html:8
+msgid "2. Connect and verify"
+msgstr "2. Connexion et vérification"
+
+#: web/administration/templates/administration/instagram.html:8
+msgid "Connect and verify"
+msgstr "Se connecter et vérifier"
+
+#: web/administration/templates/administration/instagram.html:8
+msgid "If a two-factor code is requested, enter it and connect again within five minutes."
+msgstr "Si un code de double authentification est demandé, saisissez-le et reconnectez-vous dans les cinq minutes."
+
+#: web/administration/templates/administration/instagram.html:9
+msgid "3. Load recent posts"
+msgstr "3. Charger les publications récentes"
+
+#: web/administration/templates/administration/instagram.html:9
+msgid "Images and original post text are downloaded to this website. Valid new posts publish immediately. Existing edits and hidden stories are preserved."
+msgstr "Les images et le texte original sont téléchargés sur ce site. Les nouvelles publications valides sont publiées immédiatement. Vos modifications et les publications masquées sont conservées."
+
+#: web/administration/templates/administration/instagram.html:9
+msgid "Video posts use their cover image. Carousel images are downloaded together. Loading can take a few minutes; please submit once and wait."
+msgstr "Les vidéos utilisent leur image de couverture. Les images d’un carrousel sont téléchargées ensemble. Le chargement peut prendre quelques minutes ; lancez-le une seule fois et patientez."
+
+#: web/administration/templates/administration/instagram.html:9
+msgid "Load recent posts"
+msgstr "Charger les publications récentes"
+
+#: web/administration/templates/administration/instagram.html:10
+msgid "New stories"
+msgstr "Nouvelles publications"
+
+#: web/administration/templates/administration/instagram.html:10
+msgid "Updated"
+msgstr "Mises à jour"
+
+#: web/administration/templates/administration/instagram.html:10
+msgid "Unchanged"
+msgstr "Inchangées"
+
+#: web/administration/templates/administration/instagram.html:10
+msgid "Failed (existing content retained)"
+msgstr "Échecs (contenu existant conservé)"
+
+#: web/administration/templates/administration/instagram.html:10
+msgid "Manage imported stories"
+msgstr "Gérer les publications importées"
+
+#: web/administration/templates/administration/item_delete.html:3
+#: web/administration/templates/administration/item_delete.html:6
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Delete story"
+msgstr "Supprimer la publication"
+
+#: web/administration/templates/administration/item_delete.html:4
+msgid "Delete this story?"
+msgstr "Supprimer cette publication ?"
+
+#: web/administration/templates/administration/item_delete.html:4
+msgid "This removes the post from the site and your Stories list. It does not delete the original Instagram post. History is retained, and future imports will not republish it."
+msgstr "La publication sera retirée du site et de votre liste. La publication Instagram d’origine ne sera pas supprimée. L’historique est conservé et les imports futurs ne la republieront pas."
+
+#: web/administration/templates/administration/item_delete.html:6
+msgid "Cancel"
+msgstr "Annuler"
+
+#: web/administration/templates/administration/item_edit.html:3
+msgid "Edit story"
+msgstr "Modifier la publication"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "STORY EDITOR"
+msgstr "ÉDITEUR DE PUBLICATION"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Edit the presentation."
+msgstr "Modifiez la présentation."
+
+#: web/administration/templates/administration/item_edit.html:4
+#: web/administration/templates/administration/item_image.html:4
+msgid "Source"
+msgstr "Source"
+
+#: web/administration/templates/administration/item_edit.html:4
+#: web/administration/templates/administration/item_image.html:4
+#: web/administration/templates/administration/revision.html:4
+msgid "· Version"
+msgstr "· Version"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "· Dates use Europe/London"
+msgstr "· Dates dans le fuseau Europe/London"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Saved. The change and previous version were recorded in the audit trail."
+msgstr "Enregistré. La modification et la version précédente ont été conservées dans le journal."
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Display settings"
+msgstr "Paramètres d’affichage"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Manage image and descriptions"
+msgstr "Gérer l’image et les descriptions"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Preview caption"
+msgstr "Aperçu de la légende"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Save story"
+msgstr "Enregistrer la publication"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Caption preview"
+msgstr "Aperçu de la légende"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Original source"
+msgstr "Source originale"
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "Original captions are retained in their source language. These source fields cannot be edited here."
+msgstr "Les légendes originales sont conservées dans leur langue d’origine. Ces champs sources ne peuvent pas être modifiés ici."
+
+#: web/administration/templates/administration/item_edit.html:4
+msgid "View original Instagram post ↗"
+msgstr "Voir la publication Instagram originale ↗"
+
+#: web/administration/templates/administration/item_image.html:3
+msgid "Story image"
+msgstr "Image de la publication"
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "STORY IMAGE"
+msgstr "IMAGE DE LA PUBLICATION"
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Show the story."
+msgstr "Illustrez la publication."
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Back to story editor"
+msgstr "Retour à l’éditeur de publication"
+
+#: web/administration/templates/administration/item_image.html:4
+#: web/administration/templates/administration/theme.html:4
+#, python-format
+msgid "Image storage is at least 80%% full. Contact your operator before adding more images."
+msgstr "Le stockage des images est rempli à au moins 80%%. Contactez votre responsable technique avant d’ajouter des images."
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Saved. Previous images and descriptions were retained in history."
+msgstr "Enregistré. Les images et descriptions précédentes ont été conservées dans l’historique."
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Save image and descriptions"
+msgstr "Enregistrer l’image et les descriptions"
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Keep images descriptive and use the French field when available. Images are checked and saved as PNG. Replaced images stay private in history and count toward the storage budget."
+msgstr "Décrivez les images et renseignez le champ français si possible. Les images sont vérifiées et enregistrées en PNG. Les images remplacées restent privées dans l’historique et comptent dans la limite de stockage."
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Managed image storage used:"
+msgstr "Stockage des images utilisé :"
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "Current image"
+msgstr "Image actuelle"
+
+#: web/administration/templates/administration/item_image.html:4
+msgid "No image has been attached. Upload one before publishing."
+msgstr "Aucune image n’a été ajoutée. Importez-en une avant de publier."
+
+#: web/administration/templates/administration/items.html:4
+msgid "Story deleted from the site."
+msgstr "Publication supprimée du site."
+
+#: web/administration/templates/administration/items.html:4
+msgid "CONTENT LIBRARY"
+msgstr "BIBLIOTHÈQUE DE CONTENU"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Your stories."
+msgstr "Vos publications."
+
+#: web/administration/templates/administration/items.html:4
+msgid "Search imported stories, edit their presentation, and control publication."
+msgstr "Recherchez les publications importées, modifiez leur présentation et gérez leur publication."
+
+#: web/administration/templates/administration/items.html:4
+msgid "Search"
+msgstr "Rechercher"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Stories —"
+msgstr "Publications —"
+
+#: web/administration/templates/administration/items.html:4
+msgid "matching records"
+msgstr "éléments correspondants"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Story"
+msgstr "Publication"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Source date"
+msgstr "Date source"
+
+#: web/administration/templates/administration/items.html:4
+#: web/administration/templates/administration/site_edit.html:4
+#: web/administration/templates/administration/theme.html:4
+msgid "Version"
+msgstr "Version"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Actions"
+msgstr "Actions"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Delete"
+msgstr "Supprimer"
+
+#: web/administration/templates/administration/items.html:4
+msgid "No stories match this search."
+msgstr "Aucune publication ne correspond à cette recherche."
+
+#: web/administration/templates/administration/items.html:4
+msgid "Search results"
+msgstr "Résultats de recherche"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Page"
+msgstr "Page"
+
+#: web/administration/templates/administration/items.html:4
+msgid "of"
+msgstr "sur"
+
+#: web/administration/templates/administration/items.html:4
+msgid "Next page"
+msgstr "Page suivante"
+
+#: web/administration/templates/administration/login.html:3
+msgid "Owner login"
+msgstr "Connexion du propriétaire"
+
+#: web/administration/templates/administration/login.html:4
+msgid "OWNER ACCESS"
+msgstr "ACCÈS PROPRIÉTAIRE"
+
+#: web/administration/templates/administration/login.html:4
+msgid "Welcome back."
+msgstr "Heureux de vous retrouver."
+
+#: web/administration/templates/administration/login.html:4
+msgid "Sign in with your named owner account."
+msgstr "Connectez-vous avec votre compte propriétaire nominatif."
+
+#: web/administration/templates/administration/login.html:4
+msgid "Too many sign-in attempts. Please try again after the waiting period."
+msgstr "Trop de tentatives de connexion. Veuillez réessayer après le délai d’attente."
+
+#: web/administration/templates/administration/login.html:4
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: web/administration/templates/administration/login.html:4
+msgid "For account recovery, contact your site operator. There is no public account registration."
+msgstr "Pour récupérer votre compte, contactez votre responsable technique. L’inscription publique n’est pas disponible."
+
+#: web/administration/templates/administration/password.html:3
+#: web/administration/templates/administration/password.html:5
+msgid "Change password"
+msgstr "Changer le mot de passe"
+
+#: web/administration/templates/administration/password.html:5
+msgid "Enter your current password and choose a new password for manage-local."
+msgstr "Saisissez votre mot de passe actuel et choisissez un nouveau mot de passe pour manage-local."
+
+#: web/administration/templates/administration/password.html:7
+#: web/administration/templates/administration/reviews.html:7
+msgid "Too many attempts. Please try again later."
+msgstr "Trop de tentatives. Veuillez réessayer plus tard."
+
+#: web/administration/templates/administration/policy.html:4
+msgid "Edit the public policy details and full text. Save publishes changes to the website and the policy-only page."
+msgstr "Modifiez les coordonnées et le texte intégral de la politique publique. L’enregistrement publie les modifications sur le site et sur la page réservée à la politique."
+
+#: web/administration/templates/administration/policy.html:5
+msgid "Open saved policy"
+msgstr "Ouvrir la politique enregistrée"
+
+#: web/administration/templates/administration/policy.html:6
+msgid "Policy saved and published. The previous version is retained in history."
+msgstr "Politique enregistrée et publiée. La version précédente est conservée dans l’historique."
+
+#: web/administration/templates/administration/policy.html:7
+#: web/administration/templates/administration/site_edit.html:4
+#: web/administration/templates/administration/theme.html:4
+msgid "Settings restored. The previous values and restoration source were recorded in history."
+msgstr "Paramètres restaurés. Les valeurs précédentes et la version source de la restauration ont été conservées dans l’historique."
+
+#: web/administration/templates/administration/policy.html:8
+msgid "Policy contact email uses the Contact page email:"
+msgstr "L’adresse e-mail de la politique est celle de la page Contact :"
+
+#: web/administration/templates/administration/policy.html:8
+msgid "Edit in Contact settings"
+msgstr "Modifier dans les paramètres de contact"
+
+#: web/administration/templates/administration/policy.html:9
+msgid "Preview policy"
+msgstr "Aperçu de la politique"
+
+#: web/administration/templates/administration/policy.html:9
+msgid "Save policy"
+msgstr "Enregistrer la politique"
+
+#: web/administration/templates/administration/policy.html:10
+msgid "Full policy preview"
+msgstr "Aperçu intégral de la politique"
+
+#: web/administration/templates/administration/reviews.html:5
+msgid "Control whether visitors can see the Reviews page. This section will also manage Google reviews when that integration is available."
+msgstr "Choisissez si les visiteurs peuvent consulter la page des avis. Cette section permettra aussi de gérer les avis Google lorsque l’intégration sera disponible."
+
+#: web/administration/templates/administration/revision.html:3
+msgid "Previous version"
+msgstr "Version précédente"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "PRESERVED VERSION"
+msgstr "VERSION CONSERVÉE"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Before the change."
+msgstr "Avant la modification."
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Recorded"
+msgstr "Enregistré le"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Europe/London. This view is read-only."
+msgstr "Europe/London. Cette vue est en lecture seule."
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Previous images"
+msgstr "Images précédentes"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Previous decorative background"
+msgstr "Arrière-plan décoratif précédent"
+
+#: web/administration/templates/administration/revision.html:4
+#: web/administration/templates/administration/settings_restore.html:21
+msgid "Previous decorative site background"
+msgstr "Ancien arrière-plan décoratif du site"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Review restoration"
+msgstr "Examiner la restauration"
+
+#: web/administration/templates/administration/revision.html:4
+msgid "Back to audit trail"
+msgstr "Retour au journal des modifications"
+
+#: web/administration/templates/administration/settings_restore.html:3
+msgid "Restore settings"
+msgstr "Restaurer les paramètres"
+
+#: web/administration/templates/administration/settings_restore.html:6
+msgid "SETTINGS RECOVERY"
+msgstr "RESTAURATION DES PARAMÈTRES"
+
+#: web/administration/templates/administration/settings_restore.html:7
+msgid "Review before restoring."
+msgstr "Vérifiez avant de restaurer."
+
+#: web/administration/templates/administration/settings_restore.html:8
+msgid "Current version"
+msgstr "Version actuelle"
+
+#: web/administration/templates/administration/settings_restore.html:8
+msgid "Saved version"
+msgstr "Version enregistrée"
+
+#: web/administration/templates/administration/settings_restore.html:9
+msgid "Only the settings below will change. Your current settings will be preserved as a new history entry."
+msgstr "Seuls les paramètres ci-dessous seront modifiés. Vos paramètres actuels seront conservés dans une nouvelle entrée de l’historique."
+
+#: web/administration/templates/administration/settings_restore.html:16
+msgid "Settings comparison"
+msgstr "Comparaison des paramètres"
+
+#: web/administration/templates/administration/settings_restore.html:17
+msgid "Setting"
+msgstr "Paramètre"
+
+#: web/administration/templates/administration/settings_restore.html:17
+msgid "Current value"
+msgstr "Valeur actuelle"
+
+#: web/administration/templates/administration/settings_restore.html:17
+msgid "Value to restore"
+msgstr "Valeur à restaurer"
+
+#: web/administration/templates/administration/settings_restore.html:20
+#: web/administration/templates/administration/theme.html:4
+msgid "Current decorative site background"
+msgstr "Arrière-plan décoratif actuel du site"
+
+#: web/administration/templates/administration/settings_restore.html:26
+msgid "Confirm restoration"
+msgstr "Confirmer la restauration"
+
+#: web/administration/templates/administration/settings_restore.html:28
+msgid "These settings already match the saved version. Nothing needs restoring."
+msgstr "Ces paramètres correspondent déjà à la version enregistrée. Aucune restauration n’est nécessaire."
+
+#: web/administration/templates/administration/settings_restore.html:29
+msgid "Reload comparison"
+msgstr "Actualiser la comparaison"
+
+#: web/administration/templates/administration/settings_restore.html:29
+msgid "Back to saved version"
+msgstr "Retour à la version enregistrée"
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "SITE SETTINGS"
+msgstr "PARAMÈTRES DU SITE"
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Make it yours."
+msgstr "Personnalisez votre site."
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "· Text is displayed as plain text, with HTML escaped."
+msgstr "· Le texte est affiché sans interprétation du HTML."
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Site copy saved and previous version retained."
+msgstr "Les textes du site ont été enregistrés et la version précédente a été conservée."
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Page titles and descriptions are used for search and sharing. Blank values use your locale fallback, site name and introduction."
+msgstr "Les titres et descriptions des pages servent à la recherche et au partage. Les champs vides utilisent les textes de repli, le nom du site et son introduction."
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Preview copy"
+msgstr "Aperçu des textes"
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Save settings"
+msgstr "Enregistrer les paramètres"
+
+#: web/administration/templates/administration/site_edit.html:4
+msgid "Site copy preview"
+msgstr "Aperçu des textes du site"
+
+#: web/administration/templates/administration/theme.html:3
+msgid "Site appearance"
+msgstr "Apparence du site"
+
+#: web/administration/templates/administration/theme.html:4
+msgid "SITE APPEARANCE"
+msgstr "APPARENCE DU SITE"
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Set the tone."
+msgstr "Donnez le ton."
+
+#: web/administration/templates/administration/theme.html:4
+msgid "· Choose colours and fonts, and an optional decorative background."
+msgstr "· Choisissez les couleurs, les polices et, si vous le souhaitez, un arrière-plan décoratif."
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Theme saved. The public site uses the new appearance."
+msgstr "Le thème a été enregistré. Le site public utilise la nouvelle apparence."
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Open preview in a new tab"
+msgstr "Ouvrir l’aperçu dans un nouvel onglet"
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Save theme"
+msgstr "Enregistrer le thème"
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Colours must maintain readable contrast on both the page and white cards. Background images appear around opaque content panels so they cannot obscure text. Preview does not save settings or images; reselect an upload before saving."
+msgstr "Les couleurs doivent garantir un contraste lisible sur la page et les cartes blanches. Les images d’arrière-plan entourent des panneaux opaques pour ne pas masquer le texte. L’aperçu n’enregistre ni paramètres ni images ; sélectionnez à nouveau votre fichier avant d’enregistrer."
+
+#: web/administration/templates/administration/theme.html:4
+msgid "Current decorative background"
+msgstr "Arrière-plan décoratif actuel"
+
+#: web/administration/templates/administration/unavailable.html:3
+#: web/administration/upload_guard.py:41
+msgid "Temporarily unavailable."
+msgstr "Temporairement indisponible."
+
+#: web/administration/templates/administration/unavailable.html:3
+msgid "We could not complete this request. Please try again later."
+msgstr "Nous n’avons pas pu terminer cette demande. Veuillez réessayer plus tard."
+
+#: web/administration/templates/administration/unavailable.html:3
+msgid "Reference:"
+msgstr "Référence :"
+
+#: web/administration/upload_guard.py:39
+msgid "Owner access required."
+msgstr "Accès propriétaire requis."
+
+#: web/administration/upload_guard.py:47 web/administration/upload_guard.py:52
+msgid "Upload exceeds the image limit."
+msgstr "Le fichier dépasse la taille maximale autorisée."
+
+#: web/administration/views.py:150 web/administration/views.py:535
+msgid "This record changed in another tab. Your input is retained. Reload the current record before saving again."
+msgstr "Cet élément a été modifié dans un autre onglet. Votre saisie est conservée. Rechargez la version actuelle avant d’enregistrer à nouveau."
+
+#: web/administration/views.py:236
+msgid "These settings changed after you opened this page. Reload the comparison and confirm again."
+msgstr "Ces paramètres ont été modifiés depuis l’ouverture de cette page. Actualisez la comparaison et confirmez à nouveau."
+
+#: web/administration/views.py:253
+msgid "Background image"
+msgstr "Image d’arrière-plan"
+
+#: web/administration/views.py:254 web/administration/views.py:255
+msgid "Saved image"
+msgstr "Image enregistrée"
+
+#: web/administration/views.py:254 web/administration/views.py:255
+msgid "No image"
+msgstr "Aucune image"
+
+#: web/administration/views.py:259 web/administration/views.py:260
+msgid "Enabled"
+msgstr "Activé"
+
+#: web/administration/views.py:259 web/administration/views.py:260
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: web/administration/views.py:280
+msgid "This story changed. Reload the current version, keep your descriptions, and reselect the image before saving."
+msgstr "Cette publication a changé. Rechargez la version actuelle, conservez vos descriptions et sélectionnez à nouveau l’image avant d’enregistrer."
+
+#: web/administration/views.py:319
+msgid "The theme changed in another tab. Reload the current version before saving; reselect any upload."
+msgstr "Le thème a été modifié dans un autre onglet. Rechargez la version actuelle avant d’enregistrer et sélectionnez à nouveau le fichier à importer."
+
+#: web/administration/views.py:363
+msgid "Choose an enabled language."
+msgstr "Choisissez une langue activée."
+
+#: web/administration/views.py:396
+msgid "Account details saved securely. Connect to verify access."
+msgstr "Les identifiants ont été enregistrés en toute sécurité. Connectez-vous pour vérifier l’accès."
+
+#: web/administration/views.py:402
+msgid "Instagram account verified. You can now load recent posts."
+msgstr "Le compte Instagram a été vérifié. Vous pouvez charger les publications récentes."
+
+#: web/administration/views.py:408
+msgid "Import finished. Valid new stories are now visible on the public website."
+msgstr "L’importation est terminée. Les nouvelles publications valides sont visibles sur le site public."
+
+#: web/administration/views.py:410
+msgid "Choose a supported Instagram action."
+msgstr "Choisissez une action Instagram disponible."
+
+#: web/administration/views.py:483
+msgid "This story changed in another tab. Reload and review it before deleting."
+msgstr "Cette publication a été modifiée dans un autre onglet. Rechargez-la et vérifiez-la avant de la supprimer."
+
+#: web/administration/views.py:503
+msgid "Email settings changed in another tab. Reload before saving again."
+msgstr "Les paramètres de messagerie ont été modifiés dans un autre onglet. Rechargez la page avant d’enregistrer à nouveau."
+
+#: web/public/forms.py:6
+msgid "Email address"
+msgstr "Adresse e-mail"
+
+#: web/public/forms.py:9
+msgid "Mobile number"
+msgstr "Numéro de mobile"
+
+#: web/public/forms.py:10 web/public/forms.py:19
+msgid "Enter a valid mobile number, including the country code where needed."
+msgstr "Saisissez un numéro de mobile valide, avec l’indicatif du pays si nécessaire."
+
+#: web/public/forms.py:11
+msgid "Message"
+msgstr "Message"
+
+#: web/public/forms.py:13
+msgid "Leave this field blank"
+msgstr "Laissez ce champ vide"

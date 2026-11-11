@@ -1,0 +1,13 @@
+{% extends 'public/base.html' %}
+{% block content %}
+<section class="intro"><p class="eyebrow">{{ journal }}</p><h1>{{ feed_heading }}</h1><p class="lede">{{ intro }}</p></section>
+<div class="feed">
+{% for card in cards %}
+  <article class="card">
+    {% for image in card.images %}<a class="image-link" href="{{ card.item.canonical_url }}" target="_blank" rel="noopener noreferrer"><img src="{% url 'media' asset_id=image.asset.id %}" alt="{{ image.alt }}" width="{{ image.asset.width }}" height="{{ image.asset.height }}" loading="lazy"></a>{% empty %}<p>{{ copy.media_missing }}</p>{% endfor %}
+    <div class="card-body"><time datetime="{{ card.item.effective_date|date:'c' }}">{{ card.item.effective_date|date:'DATE_FORMAT' }}</time><div class="caption">{{ card.item.caption|urlize|linebreaks }}</div><a class="source" href="{{ card.item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ copy.source }} <span aria-hidden="true">↗</span></a></div>
+  </article>
+{% empty %}<div class="empty"><span class="empty-mark" aria-hidden="true">✳</span><p>{{ empty }}</p></div>{% endfor %}
+</div>
+<nav class="pagination" aria-label="{{ copy.feed }}">{% if paged %}<a href="{% url 'feed' locale=locale %}{{ preview_query }}">{{ copy.back }}</a>{% endif %}{% if next_cursor %}<a class="button" href="?cursor={{ next_cursor|urlencode }}{% if theme_preview_token %}&amp;theme_token={{ theme_preview_token|urlencode }}{% endif %}">{{ copy.next }} <span aria-hidden="true">→</span></a>{% endif %}</nav>
+{% endblock %}
